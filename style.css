@@ -1,0 +1,249 @@
+
+
+@font-face {
+    font-family: clearface;
+    src: url(clearface.ttf);
+}
+@font-face {
+    font-family: texgy;
+    src: url(texgy.otf);
+}
+body, html {
+    margin:0px;
+    height: 100%;
+    width: 100%;
+    cursor:crosshair;
+    min-width: 500px;
+}
+
+#section1 {
+    display: grid;   
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 90px;
+    grid-gap: 20px;
+    font-family: texgy;
+    font-size: 2.25vw;   
+}
+
+.name {
+    position:fixed;
+}
+#name {
+    padding-left: 2.5vw;
+    line-height: 0px;
+    text-align: left;
+}
+#name2 {
+    font-family: clearface;
+    
+}
+.info{
+    position:fixed;
+    right: 3.87vw;
+    line-height: 0px;
+    padding-right: 2.5vw;
+}
+
+#middle1, #side1{
+     display:auto;
+}
+
+#middle2, #side2{
+     display:none;
+     align-self: center;
+}
+
+#section2 {
+    height:
+    grid-template-columns: 1.5fr 4fr 1.5fr;
+    grid-auto-rows: max-content;
+    grid-gap: 20px; 
+    vertical-align: middle;
+    text-align:center;
+    min-width: 29.8vw;
+}
+.body {
+    font-size: 4vw;
+    font-family: texgy;
+    line-height: 4vw;
+}
+#side1, #side2{
+    font-size: 2.25vw;
+    align-self: center;
+    /*background-color: beige
+    /*-webkit-text-stroke: .25px white;*/
+}
+
+
+
+#section3 {
+    display: grid;   
+    grid-template-columns: 25vw 25vw 25vw 25vw 25vw 25vw;
+    grid-auto-rows: 250;
+    grid-gap: 0px; 
+    font-family: texgy;
+    font-size:1.5vw;
+    position: absolute;
+    bottom: 1.5vw;
+    min-width: 88.126vw;
+
+    
+}
+
+.projnum{
+    text-align: center;
+    text-decoration:none;
+}
+
+
+#proj1, #proj2, #proj3, #proj4, #proj5, #proj6 {
+    padding:.5vw 2.5vw .5vw 2.5vw; 
+    line-height: 1.67vw;
+    text-decoration: none;
+}
+
+.imgnum{
+    padding:7px 2.5vw 0px 2.5vw; 
+    text-decoration: none;
+    line-height: 1.3vw;
+}
+
+#imgnum{
+   letter-spacing: 1.1vw;
+}
+
+.tag{
+    padding:17px 2.5vw 0px 2.5vw;
+    font-size:0.7vw;
+}
+
+
+
+#img1-1, #img1-2, #img1-3, #img1-4, #img1-5, #img1-6, #img2-1, #img2-2, #img2-3, #img2-4, #img2-5, #img2-6, #img3-1, #img3-2, #img3-3, #img3-4, #img4-1, #img4-2, #img4-3, #img4-4, #img5-1, #img5-2, #img5-3, #img5-4, #img6-1, #img6-2, #img6-3  {
+  top: 42.7%;
+    left: 50%;
+    width: 56%;
+  transform: translate(-50% , -50%); 
+  text-indent: 0em;
+  display: none;
+    position:fixed;
+}
+
+.right{
+    position:fixed;
+    font-size: 1.5vw;
+    font-family: clearface;
+    -webkit-text-stroke: .2px white;
+    top: 37.5%;
+    right: 5%;
+    left:85%;
+    text-align: center;
+}
+
+#proj1Label, #proj1-1Label, #proj1-2Label, #proj1-3Label, #proj1-4Label, #proj1-5Label, #proj1-6Label, #proj1-ABCLabel, 
+#proj2Label, #proj2-1Label, #proj2-2Label, #proj2-3Label, #proj2-4Label, #proj2-5Label, #proj2-6Label, #proj2-ABCLabel, 
+#proj3Label, #proj3-1Label, #proj3-2Label, #proj3-3Label, #proj3-4Label, #proj3-ABCLabel, 
+#proj4Label,#proj4-1Label, #proj4-2Label, #proj4-3Label, #proj4-4Label, #proj4-ABCLabel, #proj1-0Label, #proj2-0Label, #proj3-0Label, #proj4-0Label, #proj5-0Label, #proj6-0Label,
+#proj5Label,#proj5-1Label, #proj5-2Label, #proj5-3Label, #proj5-4Label, #proj5-ABCLabel,
+#proj6Label,#proj6-1Label, #proj6-2Label, #proj6-3Label, #proj6-ABCLabel
+{
+    display:none;
+    align-self: center;
+}
+
+.center{
+    position:fixed;
+    font-size: 4vw;
+    font-family: texgy;
+    line-height: 4vw;
+    left:21.5%;
+    right: 21.5%;
+    vertical-align: center;
+    display:none;
+}
+
+.centerBody{
+    position:fixed;
+    font-size: 2.25vw;
+    font-family: texgy;
+    line-height: 2.25vw;
+    left:21.5%;
+    right: 21.5%;
+    display:none;
+    vertical-align:center;
+    widows: 3;
+}
+
+#container {
+    height:100%;
+    align-self: center;
+}
+
+.left{
+    position:fixed;
+    font-size: 1.5vw;
+    font-family: clearface;
+    top: 37.5%;
+    right: 85%;
+    left:5%;
+    text-align: center;
+    -webkit-text-stroke: .2px white;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+
+
+#proj1Title, #proj2Title, #proj3Title, #proj4Title, #proj5Title, #proj6Title, #middle2, #middle1 {
+width:57%;
+position: fixed;
+top: 34.2%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+#proj1Desc, #proj2Desc, #proj3Desc,#proj4Desc, #proj5Desc, #proj6Desc {
+width:57%;
+position: fixed;
+top: 37.2%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.face{
+    width:2vw;
+}
+
+#face-1{
+    position:fixed;
+    top:1.35vw;
+    right: 0px;
+    line-height: 0px;
+    padding-right: 2.5vw;
+}
+
+.faceToy{
+    position: fixed;
+    width: 2.1vw;
+}
+
+#face-2, #face-3, #face-4, #face-5, #face-6, #face-7, #face-8, #face-9, #face-10, #face-11{
+    display: none;
+    top:0px;
+    left:0px;
+}
+
+#infoTitle {
+    font-size:2.25vw;
+}
+
+#face-1:hover{
+    cursor:pointer;
+}
+
+
+
+
+
