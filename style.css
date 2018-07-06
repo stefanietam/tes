@@ -78,7 +78,7 @@ body, html {
 
 #section3 {
     display: grid;   
-    grid-template-columns: 25vw 25vw 25vw 25vw 25vw 25vw 25vw 25vw 25vw 25vw;
+    grid-template-columns: 25vw 25vw 25vw 25vw 25vw 25vw 25vw 25vw 25vw;
     grid-auto-rows: 250;
     grid-gap: 0px; 
     font-family: texgy;
