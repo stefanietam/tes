@@ -44,6 +44,13 @@ body, html {
     padding-right: 2.5vw;
 }
 
+.infoPage{
+    position:fixed;
+    right: 2.5vw;
+    line-height: 0px;
+    padding-right: .5vw;
+}
+
 #middle1, #side1{
      display:auto;
 }
@@ -247,6 +254,75 @@ transform: translate(-50%, -50%);
     cursor:pointer;
 }
 
+.imgPage{
+    width: 60%;
+    padding:2.5vw;
+    display: block;
+    margin: 0 auto;
+}
+
+.page{
+}
+
+.centerBodyPage {
+    font-size: 2.25vw;
+    font-family: texgy;
+    line-height: 2.25vw;
+    vertical-align:center;
+    margin-left: 2.5vw;
+    width: 95%;
+    widows: 3;
+    padding-bottom: 50px;
+}
+
+.centerBodyTitle {
+    position:fixed;
+    top:-15px;
+    font-size: 2.25vw;
+    font-family: texgy;
+    line-height: 2.25vw;
+    text-align:center;
+    margin-left: 20%;
+    width: 60%;
+    widows: 3;
+}
+
+.centerBodyHome {
+    position:fixed;
+    bottom:-15px;
+    font-size: 2.25vw;
+    font-family: texgy;
+    line-height: 2.25vw;
+    text-align:center;
+    margin-left: 20%;
+    width: 60%;
+    widows: 3;
+}
+
+#blockTop{
+    position: fixed;
+    top:0px;
+    height: 5vw;
+    width:100%;
+    background-color:white;
+}
+
+#blockBottom{
+    position: fixed;
+    bottom:0px;
+    height: 5vw;
+    width:100%;
+    background-color:white;
+}
+
+#section1 {
+    display: grid;   
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 90px;
+    grid-gap: 20px;
+    font-family: texgy;
+    font-size: 2.25vw;   
+}
 
 
 
