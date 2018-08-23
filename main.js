@@ -214,7 +214,7 @@ $(document).ready(function() {
 //PROJECT 7 IMAGES
     
   // get rid of intro text + sides, underline project title    
-  $("#7-1, #7-2, #7-3, #7-4, #7-ABC, #proj7").hover(function() {
+  $("#7-1, #7-2, #7-3, #7-4, #7-5, #7-ABC, #proj7").hover(function() {
      $("#middle1, #side1, #middle2, #side2").hide();
      $("#proj7").css("text-decoration", "underline");
       $("#proj7Label").show();      
@@ -268,6 +268,15 @@ $(document).ready(function() {
         $("#img7-4").hide();
       $("#proj7-4Label").hide();
   });
+    
+  $("#7-5").hover(function() {
+     $("#img7-5").show();
+      $("#proj7-5Label").show();
+    },
+  function(){
+        $("#img7-5").hide();
+      $("#proj7-5Label").hide();
+  });    
 
     
   $("#7-ABC").hover(function() {
