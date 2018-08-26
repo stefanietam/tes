@@ -11,10 +11,75 @@ $(document).ready(function() {
      $("#middle2, #side2").show();
       $("#middle1, #side1").hide();
   });
+
+//PROJECT 11 IMAGES
+    
+  $("#11-1, #11-2, #11-3, #11-4, #11-5, #11-ABC, #proj11").hover(function() {
+     $("#middle1, #side1, #middle2, #side2").hide();
+     $("#proj11").css("text-decoration", "underline");
+      $("#proj11Label").show();
+    },
+  function(){
+        $("#proj11").css("text-decoration", "none");
+      $("#proj11Label").hide();
+  });
+    
+  //title hovers    
+  $("#proj11").hover(function() {
+      $("#proj11Label, #proj11Title, #proj11-0Label").show(); 
+  },
+  function(){
+      $("#proj11Label, #proj11Title, #proj11-0Label").hide();
+  });
+    
+  //numbers + abc hovers  
+  $("#11-1").hover(function() {
+     $("#img11-1, #proj11-1Label").show();
+    },
+  function(){
+        $("#img11-1, #proj11-1Label").hide();
+  });
+    
+  $("#11-2").hover(function() {
+     $("#img11-2, #proj11-2Label").show();
+    },
+  function(){
+        $("#img11-2, #proj11-2Label").hide();
+  });
+    
+  $("#11-3").hover(function() {
+     $("#img11-3, #proj11-3Label").show();
+    },
+  function(){
+        $("#img11-3, #proj11-3Label").hide();
+  });
+
+  $("#11-4").hover(function() {
+     $("#img11-4, #proj11-4Label").show();
+    },
+  function(){
+        $("#img11-4, #proj11-4Label").hide();
+  });
+    
+  $("#11-5").hover(function() {
+     $("#img11-5, #proj11-5Label").show();
+    },
+  function(){
+        $("#img11-5, #proj11-5Label").hide();
+  });    
+    
+    $("#11-ABC").hover(function() {
+     $("#proj11Desc, #proj11-ABCLabel").show();
+    },
+  function(){
+        $("#proj11Desc, #proj11-ABCLabel").hide();
+  });
     
 //PROJECT 10 IMAGES
     
   // get rid of intro text + sides, underline project title 
+     
+    
   $("#10-1, #10-2, #10-3, #10-4, #10-ABC, #proj10").hover(function() {
      $("#middle1, #side1, #middle2, #side2").hide();
      $("#proj10").css("text-decoration", "underline");
