@@ -12,7 +12,92 @@ $(document).ready(function() {
       $("#middle1, #side1").hide();
   });
 
-//PROJECT 11 IMAGES
+//PROJECT 12 IMAGES
+    
+  // get rid of intro text + sides, underline project title    
+  $("#12-1, #12-2, #12-3, #12-4, #12-5, #12-6, #12-ABC, #proj12").hover(function() {
+     $("#middle1, #side1, #middle2, #side2").hide();
+     $("#proj12").css("text-decoration", "underline");
+      $("#proj12Label").show();      
+    },
+  function(){
+        $("#proj12").css("text-decoration", "none");
+      $("#proj12Label").hide();
+  });
+  
+  // title hovers 
+  $("#proj12").hover(function() {
+      $("#proj12Label, #proj12Title, #proj12-0Label").show(); 
+    },
+  function(){
+      $("#proj12Label, #proj12Title, #proj12-0Label").hide();
+  });
+  
+  // numbers + abc hovers   
+  $("#12-1").hover(function() {
+     $("#img12-1").show();
+     $("#proj12-1Label").show();
+    },
+  function(){
+        $("#img12-1").hide();
+        $("#proj12-1Label").hide();
+  });
+    
+    $("#12-2").hover(function() {
+     $("#img12-2").show();
+        $("#proj12-2Label").show();
+    },
+  function(){
+        $("#img12-2").hide();
+        $("#proj12-2Label").hide();
+  });
+    
+  $("#12-3").hover(function() {
+     $("#img12-3").show();
+      $("#proj12-3Label").show();
+    },
+  function(){
+        $("#img12-3").hide();
+      $("#proj12-3Label").hide();
+  });
+
+  $("#12-4").hover(function() {
+     $("#img12-4").show();
+      $("#proj12-4Label").show();
+    },
+  function(){
+        $("#img12-4").hide();
+      $("#proj12-4Label").hide();
+  });
+
+  $("#12-5").hover(function() {
+     $("#img12-5").show();
+      $("#proj12-5Label").show();
+     
+    },
+  function(){
+        $("#img12-5").hide();
+      $("#proj12-5Label").hide();
+  });
+    
+  $("#12-6").hover(function() {
+     $("#img12-6").show();
+      $("#proj12-6Label").show();
+    },
+  function(){
+        $("#img12-6").hide();
+      $("#proj12-6Label").hide();
+  });
+    
+  $("#12-ABC").hover(function() {
+      $("#proj12Desc, #proj12-ABCLabel").show();
+    },
+  function(){
+      $("#proj12Desc, #proj12-ABCLabel").hide();
+  });
+    
+    
+    //PROJECT 11 IMAGES
     
   $("#11-1, #11-2, #11-3, #11-4, #11-5, #11-ABC, #proj11").hover(function() {
      $("#middle1, #side1, #middle2, #side2").hide();
