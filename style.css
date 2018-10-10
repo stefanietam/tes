@@ -14,11 +14,13 @@ body, html {
     width: 100%;
     cursor:crosshair;
     min-width: 500px;
+    color:black;
+    background-color: white;
 }
 
 #section1 {
     display: grid;   
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 90px;
     grid-gap: 20px;
     font-family: texgy;
@@ -28,6 +30,15 @@ body, html {
 .name {
     position:fixed;
 }
+
+#arrows{
+    position:fixed;
+    right: 3.87vw;
+    line-height: 0px;
+    padding-right: 45vw;
+    bottom:%;
+}
+
 #name {
     padding-left: 2.5vw;
     line-height: 0px;
@@ -252,7 +263,7 @@ transform: translate(-50%, -50%);
     font-size:2.25vw;
 }
 
-#face-1:hover{
+#face-1, #arrows:hover{
     cursor:pointer;
 }
 

@@ -12,6 +12,74 @@ $(document).ready(function() {
       $("#middle1, #side1").hide();
   });
 
+//SCROLL
+    
+    var scroll = 0;
+    
+$("#test").click(function() {
+    console.log(scroll);
+    if(scroll == 0){
+      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 1){
+      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 2){
+      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 3){
+      $("html, body").animate({ scrollLeft: $("#proj10").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 4){
+      $("html, body").animate({ scrollLeft: $("#proj1").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 5){
+      $("html, body").animate({ scrollLeft: $("#proj2").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 6){
+      $("html, body").animate({ scrollLeft: $("#proj3").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 7){
+      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
+      scroll = 0;    
+    }
+    }); 
+    
+$("#test2").click(function() {
+    console.log(scroll);
+    if(scroll == 0){
+      $("html, body").animate({ scrollLeft: $("#proj3").offset().left }, 750,);
+      scroll = 7;    
+    } else if(scroll == 1){
+      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
+      scroll --;    
+    } else if(scroll == 2){
+      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
+      scroll --;    
+    } else if(scroll == 3){
+      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
+      scroll --;    
+    } else if(scroll == 4){
+      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
+      scroll --;    
+    } else if(scroll == 5){
+      $("html, body").animate({ scrollLeft: $("#proj10").offset().left }, 750,);
+      scroll --;    
+    } else if(scroll == 6){
+      $("html, body").animate({ scrollLeft: $("#proj1").offset().left }, 750,);
+      scroll --;    
+    } else if(scroll == 7){
+      $("html, body").animate({ scrollLeft: $("#proj2").offset().left }, 750,);
+      scroll --;    
+    }
+    });
+    
+
+    
+    
+    
+    
+    
 //PROJECT 12 IMAGES
     
   // get rid of intro text + sides, underline project title    
