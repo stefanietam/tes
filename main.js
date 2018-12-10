@@ -15,60 +15,70 @@ $(document).ready(function() {
 //SCROLL
     
     var scroll = 0;
-    
+
+//scroll -> place most recent project on the bottom, move previous new project to top.   
 $("#test").click(function() {
     console.log(scroll);
     if(scroll == 0){
-      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
       scroll ++;    
     } else if(scroll == 1){
-      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
       scroll ++;    
     } else if(scroll == 2){
-      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
       scroll ++;    
     } else if(scroll == 3){
-      $("html, body").animate({ scrollLeft: $("#proj10").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
       scroll ++;    
     } else if(scroll == 4){
-      $("html, body").animate({ scrollLeft: $("#proj1").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj10").offset().left }, 750,);
       scroll ++;    
     } else if(scroll == 5){
-      $("html, body").animate({ scrollLeft: $("#proj2").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj1").offset().left }, 750,);
       scroll ++;    
     } else if(scroll == 6){
-      $("html, body").animate({ scrollLeft: $("#proj3").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj2").offset().left }, 750,);
       scroll ++;    
     } else if(scroll == 7){
-      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj3").offset().left }, 750,);
+      scroll ++;    
+    }  else if(scroll == 8){
+      $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
       scroll = 0;    
     }
     }); 
-    
+
+//scroll <-    
 $("#test2").click(function() {
     console.log(scroll);
     if(scroll == 0){
       $("html, body").animate({ scrollLeft: $("#proj3").offset().left }, 750,);
-      scroll = 7;    
-    } else if(scroll == 1){
-      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
-      scroll --;    
+      scroll = 8;    
+    } 
+    //input new project here??
+    else if(scroll == 1){
+      $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
+      scroll --; 
     } else if(scroll == 2){
+      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
+      scroll --;
+    } else if(scroll == 3){
       $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
       scroll --;    
-    } else if(scroll == 3){
+    } else if(scroll == 4){
       $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
       scroll --;    
-    } else if(scroll == 4){
+    } else if(scroll == 5){
       $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
       scroll --;    
-    } else if(scroll == 5){
+    } else if(scroll == 6){
       $("html, body").animate({ scrollLeft: $("#proj10").offset().left }, 750,);
       scroll --;    
-    } else if(scroll == 6){
+    } else if(scroll == 7){
       $("html, body").animate({ scrollLeft: $("#proj1").offset().left }, 750,);
       scroll --;    
-    } else if(scroll == 7){
+    } else if(scroll == 8){
       $("html, body").animate({ scrollLeft: $("#proj2").offset().left }, 750,);
       scroll --;    
     }
@@ -77,7 +87,98 @@ $("#test2").click(function() {
 
     
     
+//PROJECT 13 IMAGES
     
+  // get rid of intro text + sides, underline project title    
+  $("#13-1, #13-2, #13-3, #13-4, #13-5, #13-6, #13-ABC, #proj13").hover(function() {
+     $("#middle1, #side1, #middle2, #side2").hide();
+     $("#proj13").css("text-decoration", "underline");
+      $("#proj13Label").show();      
+    },
+  function(){
+        $("#proj13").css("text-decoration", "none");
+      $("#proj13Label").hide();
+  });
+  
+  // title hovers 
+  $("#proj13").hover(function() {
+      $("#proj13Label, #proj13Title, #proj13-0Label").show(); 
+    },
+  function(){
+      $("#proj13Label, #proj13Title, #proj13-0Label").hide();
+  });
+  
+  // numbers + abc hovers   
+  $("#13-1").hover(function() {
+     $("#img13-1").show();
+     $("#proj13-1Label").show();
+    },
+  function(){
+        $("#img13-1").hide();
+        $("#proj13-1Label").hide();
+  });
+    
+    $("#13-2").hover(function() {
+     $("#img13-2").show();
+        $("#proj13-2Label").show();
+    },
+  function(){
+        $("#img13-2").hide();
+        $("#proj13-2Label").hide();
+  });
+    
+  $("#13-3").hover(function() {
+     $("#img13-3").show();
+      $("#proj13-3Label").show();
+    },
+  function(){
+        $("#img13-3").hide();
+      $("#proj13-3Label").hide();
+  });
+
+  $("#13-4").hover(function() {
+     $("#img13-4").show();
+      $("#proj13-4Label").show();
+    },
+  function(){
+        $("#img13-4").hide();
+      $("#proj13-4Label").hide();
+  });
+
+  $("#13-5").hover(function() {
+     $("#img13-5").show();
+      $("#proj13-5Label").show();
+     
+    },
+  function(){
+        $("#img13-5").hide();
+      $("#proj13-5Label").hide();
+  });
+    
+  $("#13-6").hover(function() {
+     $("#img13-6").show();
+      $("#proj13-6Label").show();
+    },
+  function(){
+        $("#img13-6").hide();
+      $("#proj13-6Label").hide();
+  });
+    
+  $("#13-7").hover(function() {
+     $("#img13-7").show();
+      $("#proj13-7Label").show();
+    },
+  function(){
+        $("#img13-7").hide();
+      $("#proj13-7Label").hide();
+  });
+    
+  $("#13-ABC").hover(function() {
+      $("#proj13Desc, #proj13-ABCLabel").show();
+    },
+  function(){
+      $("#proj13Desc, #proj13-ABCLabel").hide();
+  });    
     
     
 //PROJECT 12 IMAGES
