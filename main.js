@@ -329,6 +329,13 @@ $("#test2").click(function() {
         $("#proj11Desc, #proj11-ABCLabel").hide();
   });
     
+    $("#11-6").hover(function() {
+     $("#img11-6, #proj11-6Label").show();
+    },
+  function(){
+        $("#img11-6, #proj11-6Label").hide();
+  });    
+    
 //PROJECT 10 IMAGES
     
   // get rid of intro text + sides, underline project title 
