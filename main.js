@@ -268,7 +268,7 @@ $("#test2").click(function() {
     
     //PROJECT 11 IMAGES
     
-  $("#11-1, #11-2, #11-3, #11-4, #11-5, #11-ABC, #proj11").hover(function() {
+  $("#11-1, #11-2, #11-3, #11-4, #11-5, #11-6, #11-ABC, #proj11").hover(function() {
      $("#middle1, #side1, #middle2, #side2").hide();
      $("#proj11").css("text-decoration", "underline");
       $("#proj11Label").show();
