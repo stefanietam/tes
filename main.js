@@ -31,19 +31,7 @@ $("#test").click(function() {
     } else if(scroll == 3){
       $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
       scroll ++;    
-    } else if(scroll == 4){
-      $("html, body").animate({ scrollLeft: $("#proj10").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 5){
-      $("html, body").animate({ scrollLeft: $("#proj1").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 6){
-      $("html, body").animate({ scrollLeft: $("#proj2").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 7){
-      $("html, body").animate({ scrollLeft: $("#proj3").offset().left }, 750,);
-      scroll ++;    
-    }  else if(scroll == 8){
+    }  else if(scroll == 4){
       $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
       scroll = 0;    
     }
@@ -53,8 +41,8 @@ $("#test").click(function() {
 $("#test2").click(function() {
     console.log(scroll);
     if(scroll == 0){
-      $("html, body").animate({ scrollLeft: $("#proj3").offset().left }, 750,);
-      scroll = 8;    
+      $("html, body").animate({ scrollLeft: $("#proj1").offset().left }, 750,);
+      scroll = 4;    
     } 
     //input new project here??
     else if(scroll == 1){
@@ -69,19 +57,7 @@ $("#test2").click(function() {
     } else if(scroll == 4){
       $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
       scroll --;    
-    } else if(scroll == 5){
-      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 6){
-      $("html, body").animate({ scrollLeft: $("#proj10").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 7){
-      $("html, body").animate({ scrollLeft: $("#proj1").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 8){
-      $("html, body").animate({ scrollLeft: $("#proj2").offset().left }, 750,);
-      scroll --;    
-    }
+    } 
     });
     
 
@@ -90,7 +66,7 @@ $("#test2").click(function() {
 //PROJECT 13 IMAGES
     
   // get rid of intro text + sides, underline project title    
-  $("#13-1, #13-2, #13-3, #13-4, #13-5, #13-6, #13-ABC, #proj13").hover(function() {
+  $("#13-1, #13-2, #13-3, #13-4, #13-5, #13-6,  #13-7, #13-ABC, #proj13").hover(function() {
      $("#middle1, #side1, #middle2, #side2").hide();
      $("#proj13").css("text-decoration", "underline");
       $("#proj13Label").show();      
@@ -184,7 +160,7 @@ $("#test2").click(function() {
 //PROJECT 12 IMAGES
     
   // get rid of intro text + sides, underline project title    
-  $("#12-1, #12-2, #12-3, #12-4, #12-5, #12-6, #12-ABC, #proj12").hover(function() {
+  $("#12-1, #12-2, #12-3, #12-4, #12-5, #12-6, #12-7, #12-ABC, #proj12").hover(function() {
      $("#middle1, #side1, #middle2, #side2").hide();
      $("#proj12").css("text-decoration", "underline");
       $("#proj12Label").show();      
@@ -256,6 +232,15 @@ $("#test2").click(function() {
   function(){
         $("#img12-6").hide();
       $("#proj12-6Label").hide();
+  });
+    
+    $("#12-7").hover(function() {
+     $("#img12-7").show();
+      $("#proj12-7Label").show();
+    },
+  function(){
+        $("#img12-7").hide();
+      $("#proj12-7Label").hide();
   });
     
   $("#12-ABC").hover(function() {

@@ -24,7 +24,7 @@ body, html {
     grid-auto-rows: 90px;
     grid-gap: 20px;
     font-family: texgy;
-    font-size: 2.25vw;   
+    font-size: 1.5vw;   
 }
 
 .name {
@@ -36,7 +36,7 @@ body, html {
     right:2.5vw;
     line-height: 0px;
     font-family: texgy;
-    font-size: 2.25vw;
+    font-size: 1.5vw;
     top:39.75%;
 }
 
@@ -45,7 +45,7 @@ body, html {
     left:2.5vw;
     line-height: 0px;
     font-family: texgy;
-    font-size: 2.25vw;
+    font-size: 1.5vw;
     top:39.75%;
 }
 
@@ -54,7 +54,7 @@ body, html {
     right:2.5vw;
     line-height: 0px;
     font-family: texgy;
-    font-size: 2.25vw;
+    font-size: 1.5vw;
     top:42%;
 }
 
@@ -63,7 +63,7 @@ body, html {
     left:2.5vw;
     line-height: 0px;
     font-family: texgy;
-    font-size: 2.25vw;
+    font-size: 1.5vw;
     top:42%;
 }
 
@@ -72,20 +72,17 @@ body, html {
     line-height: 0px;
     text-align: left;
 }
-#name2 {
-    font-family: clearface;
-    
-}
+
 .info{
     position:fixed;
-    right: 3.87vw;
+    right: 1vw;
     line-height: 0px;
-    padding-right: 2.5vw;
+    padding-right: 2vw;
 }
 
 .infoPage{
     position:fixed;
-    right: 2.5vw;
+    right: 2.25vw;
     line-height: 0px;
     padding-right: .5vw;
 }
@@ -109,12 +106,12 @@ body, html {
     min-width: 29.8vw;
 }
 .body {
-    font-size: 4vw;
+    font-size: 3vw;
     font-family: texgy;
-    line-height: 4vw;
+    line-height: 3vw;
 }
 #side1, #side2{
-    font-size: 2.25vw;
+    font-size: 1.5vw;
     align-self: center;
     /*background-color: beige
     /*-webkit-text-stroke: .25px white;*/
@@ -124,7 +121,7 @@ body, html {
 
 #section3 {
     display: grid;   
-    grid-template-columns: 25vw 25vw 25vw 25vw 25vw 25vw 25vw 25vw 25vw 25vw 25vw 25vw;
+    grid-template-columns: 25vw 25vw 25vw 25vw 25vw 25vw 25vw 25vw;
     grid-auto-rows: 250;
     grid-gap: 0px; 
     font-family: texgy;
@@ -176,7 +173,7 @@ body, html {
 #img9-1, #img9-2, #img9-3, 
 #img10-1, #img10-2, #img10-3, #img10-4, #img10-5, 
 #img11-1, #img11-2, #img11-3, #img11-4, #img11-5, #img11-6,
-#img12-1, #img12-2, #img12-3, #img12-4, #img12-5, #img12-6, 
+#img12-1, #img12-2, #img12-3, #img12-4, #img12-5, #img12-6,  #img12-7, 
 #img13-1, #img13-2, #img13-3, #img13-4, #img13-5, #img13-6, #img13-7  {
   top: 45%;
     left: 50%;
@@ -190,9 +187,9 @@ body, html {
 .right{
     position:fixed;
     font-size: 1.5vw;
-    font-family: clearface;
+    font-family: texgy;
     -webkit-text-stroke: .2px white;
-    top: 40%;
+    top: 38%;
     right: 5%;
     left:85%;
     text-align: center;
@@ -209,7 +206,7 @@ body, html {
 #proj9Label, #proj9-1Label, #proj9-2Label, #proj9-3Label, #proj9-0Label, #proj9-ABCLabel,
 #proj10Label, #proj10-1Label, #proj10-2Label, #proj10-3Label, #proj10-4Label, #proj10-5Label, #proj10-0Label, #proj10-ABCLabel,
 #proj11Label, #proj11-1Label, #proj11-2Label, #proj11-3Label, #proj11-4Label, #proj11-5Label, #proj11-6Label, #proj11-0Label, #proj11-ABCLabel,
-#proj12Label, #proj12-1Label, #proj12-2Label, #proj12-3Label, #proj12-4Label, #proj12-5Label, #proj12-6Label, #proj12-0Label, #proj12-ABCLabel,
+#proj12Label, #proj12-1Label, #proj12-2Label, #proj12-3Label, #proj12-4Label, #proj12-5Label, #proj12-6Label, #proj12-7Label, #proj12-0Label, #proj12-ABCLabel,
 #proj13Label, #proj13-1Label, #proj13-2Label, #proj13-3Label, #proj13-4Label, #proj13-5Label, #proj13-6Label, #proj13-7Label, #proj13-0Label, #proj13-ABCLabel
 {
     display:none;
@@ -218,9 +215,9 @@ body, html {
 
 .center{
     position:fixed;
-    font-size: 4vw;
+    font-size: 3vw;
     font-family: texgy;
-    line-height: 4vw;
+    line-height: 3vw;
     left:21.5%;
     right: 21.5%;
     vertical-align: center;
@@ -229,9 +226,9 @@ body, html {
 
 .centerBody{
     position:fixed;
-    font-size: 2.25vw;
+    font-size: 1.5vw;
     font-family: texgy;
-    line-height: 2.25vw;
+    line-height: 1.5vw;
     left:21.5%;
     right: 21.5%;
     display:none;
@@ -247,8 +244,8 @@ body, html {
 .left{
     position:fixed;
     font-size: 1.5vw;
-    font-family: clearface;
-    top: 40%;
+    font-family: texgy;
+    top: 38%;
     right: 85%;
     left:5%;
     text-align: center;
@@ -278,20 +275,20 @@ transform: translate(-50%, -50%);
 }
 
 .face{
-    width:2vw;
+    width:1.35vw;
 }
 
 #face-1{
     position:fixed;
-    top:1.35vw;
+    top:1.25vw;
     right: 0px;
     line-height: 0px;
-    padding-right: 2.5vw;
+    padding-right: 1.5vw;
 }
 
 .faceToy{
     position: fixed;
-    width: 2.1vw;
+    width: 1.3vw;
 }
 
 #face-2, #face-3, #face-4, #face-5, #face-6, #face-7, #face-8, #face-9, #face-10, #face-11{
@@ -319,9 +316,9 @@ transform: translate(-50%, -50%);
 }
 
 .centerBodyPage {
-    font-size: 2.25vw;
+    font-size: 1.5vw;
     font-family: texgy;
-    line-height: 2.25vw;
+    line-height: 1.5vw;
     vertical-align:center;
     margin-left: 2.5vw;
     width: 95%;
@@ -331,8 +328,8 @@ transform: translate(-50%, -50%);
 
 .centerBodyTitle {
     position:fixed;
-    top:-20px;
-    font-size: 2.25vw;
+    top:0px;
+    font-size: 1.5vw;
     font-family: texgy;
     line-height: 2.25vw;
     text-align:center;
@@ -344,7 +341,7 @@ transform: translate(-50%, -50%);
 .centerBodyHome {
     position:fixed;
     bottom:-15px;
-    font-size: 2.25vw;
+    font-size: 1.5vw;
     font-family: texgy;
     line-height: 2.25vw;
     text-align:center;
@@ -370,12 +367,13 @@ transform: translate(-50%, -50%);
 }
 
 #section1 {
+    padding-top: 10px;
     display: grid;   
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 90px;
     grid-gap: 20px;
     font-family: texgy;
-    font-size: 2.25vw;   
+    font-size: 1.5vw;   
 }
 
 
