@@ -20,27 +20,33 @@ $(document).ready(function() {
 $("#test").click(function() {
     console.log(scroll);
     if(scroll == 0){
-      $("html, body").animate({ scrollLeft: $("#proj14").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj16").offset().left }, 750,);
       scroll ++;    
     } else if(scroll == 1){
-      $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj15").offset().left }, 750,);
       scroll ++;    
     } else if(scroll == 2){
-      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj14").offset().left }, 750,);
       scroll ++;    
     } else if(scroll == 3){
-      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
       scroll ++;    
     }  else if(scroll == 4){
-      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
       scroll ++;    
     }  else if(scroll == 5){
-      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
       scroll ++;    
     }   else if(scroll == 6){
-      $("html, body").animate({ scrollLeft: $("#proj15").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 7){
+      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 8){
+      $("html, body").animate({ scrollLeft: $("#proj17").offset().left }, 750,);
       scroll = 0;    
-    }     
+    }    
     }); 
 
 //scroll <-    
@@ -48,30 +54,259 @@ $("#test2").click(function() {
     console.log(scroll);
     if(scroll == 0){
       $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
-      scroll = 6;    
+      scroll = 8;    
     } 
     //input new project here??
     else if(scroll == 1){
-      $("html, body").animate({ scrollLeft: $("#proj15").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj17").offset().left }, 750,);
       scroll --; 
     } else if(scroll == 2){
-      $("html, body").animate({ scrollLeft: $("#proj14").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj16").offset().left }, 750,);
       scroll --;
     } else if(scroll == 3){
-      $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj15").offset().left }, 750,);
       scroll --;    
     } else if(scroll == 4){
-      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj14").offset().left }, 750,);
       scroll --;    
     } else if(scroll == 5){
-      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
+      $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
       scroll --;    
     } else if(scroll == 6){
+      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
+      scroll --;    
+    } else if(scroll == 7){
+      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
+      scroll --;    
+    }  else if(scroll == 8){
       $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
       scroll --;    
     }  
     });
- 
+
+    
+ //PROJECT 17 IMAGES
+    
+  // get rid of intro text + sides, underline project title    
+  $("#17-1, #17-2, #17-3, #17-4, #17-5, #17-6,  #17-7, #17-8, #17-9, #17-ABC, #proj17").hover(function() {
+     $("#middle1, #side1, #middle2, #side2").hide();
+     $("#proj17").css("text-decoration", "underline");
+      $("#proj17Label").show();      
+    },
+  function(){
+        $("#proj17").css("text-decoration", "none");
+      $("#proj17Label").hide();
+  });
+  
+  // title hovers 
+  $("#proj17").hover(function() {
+      $("#proj17Label, #proj17Title, #proj17-0Label").show(); 
+    },
+  function(){
+      $("#proj17Label, #proj17Title, #proj17-0Label").hide();
+  });
+  
+  // numbers + abc hovers   
+  $("#17-1").hover(function() {
+     $("#img17-1").show();
+     $("#proj17-1Label").show();
+    },
+  function(){
+        $("#img17-1").hide();
+        $("#proj17-1Label").hide();
+  });
+    
+    $("#17-2").hover(function() {
+     $("#img17-2").show();
+        $("#proj17-2Label").show();
+    },
+  function(){
+        $("#img17-2").hide();
+        $("#proj17-2Label").hide();
+  });
+    
+  $("#17-3").hover(function() {
+     $("#img17-3").show();
+      $("#proj17-3Label").show();
+    },
+  function(){
+        $("#img17-3").hide();
+      $("#proj17-3Label").hide();
+  });
+
+  $("#17-4").hover(function() {
+     $("#img17-4").show();
+      $("#proj17-4Label").show();
+    },
+  function(){
+        $("#img17-4").hide();
+      $("#proj17-4Label").hide();
+  });
+
+  $("#17-5").hover(function() {
+     $("#img17-5").show();
+      $("#proj17-5Label").show();
+     
+    },
+  function(){
+        $("#img17-5").hide();
+      $("#proj17-5Label").hide();
+  });
+    
+  $("#17-6").hover(function() {
+     $("#img17-6").show();
+      $("#proj17-6Label").show();
+    },
+  function(){
+        $("#img17-6").hide();
+      $("#proj17-6Label").hide();
+  });
+    
+  $("#17-7").hover(function() {
+     $("#img17-7").show();
+      $("#proj17-7Label").show();
+    },
+  function(){
+        $("#img17-7").hide();
+      $("#proj17-7Label").hide();
+  });
+    
+  $("#17-8").hover(function() {
+     $("#img17-8").show();
+      $("#proj17-8Label").show();
+    },
+  function(){
+        $("#img17-8").hide();
+      $("#proj17-8Label").hide();
+  });
+    
+  $("#17-9").hover(function() {
+     $("#img17-9").show();
+      $("#proj17-9Label").show();
+    },
+  function(){
+        $("#img17-9").hide();
+      $("#proj17-9Label").hide();
+  });
+    
+  $("#17-ABC").hover(function() {
+      $("#proj17Desc, #proj17-ABCLabel").show();
+    },
+  function(){
+      $("#proj17Desc, #proj17-ABCLabel").hide();
+  });    
+    
+//PROJECT 16 IMAGES
+    
+  // get rid of intro text + sides, underline project title    
+  $("#16-1, #16-2, #16-3, #16-4, #16-5, #16-6,  #16-7, #16-8, #16-9, #16-ABC, #proj16").hover(function() {
+     $("#middle1, #side1, #middle2, #side2").hide();
+     $("#proj16").css("text-decoration", "underline");
+      $("#proj16Label").show();      
+    },
+  function(){
+        $("#proj16").css("text-decoration", "none");
+      $("#proj16Label").hide();
+  });
+  
+  // title hovers 
+  $("#proj16").hover(function() {
+      $("#proj16Label, #proj16Title, #proj16-0Label").show(); 
+    },
+  function(){
+      $("#proj16Label, #proj16Title, #proj16-0Label").hide();
+  });
+  
+  // numbers + abc hovers   
+  $("#16-1").hover(function() {
+     $("#img16-1").show();
+     $("#proj16-1Label").show();
+    },
+  function(){
+        $("#img16-1").hide();
+        $("#proj16-1Label").hide();
+  });
+    
+    $("#16-2").hover(function() {
+     $("#img16-2").show();
+        $("#proj16-2Label").show();
+    },
+  function(){
+        $("#img16-2").hide();
+        $("#proj16-2Label").hide();
+  });
+    
+  $("#16-3").hover(function() {
+     $("#img16-3").show();
+      $("#proj16-3Label").show();
+    },
+  function(){
+        $("#img16-3").hide();
+      $("#proj16-3Label").hide();
+  });
+
+  $("#16-4").hover(function() {
+     $("#img16-4").show();
+      $("#proj16-4Label").show();
+    },
+  function(){
+        $("#img16-4").hide();
+      $("#proj16-4Label").hide();
+  });
+
+  $("#16-5").hover(function() {
+     $("#img16-5").show();
+      $("#proj16-5Label").show();
+     
+    },
+  function(){
+        $("#img16-5").hide();
+      $("#proj16-5Label").hide();
+  });
+    
+  $("#16-6").hover(function() {
+     $("#img16-6").show();
+      $("#proj16-6Label").show();
+    },
+  function(){
+        $("#img16-6").hide();
+      $("#proj16-6Label").hide();
+  });
+    
+  $("#16-7").hover(function() {
+     $("#img16-7").show();
+      $("#proj16-7Label").show();
+    },
+  function(){
+        $("#img16-7").hide();
+      $("#proj16-7Label").hide();
+  });
+    
+  $("#16-8").hover(function() {
+     $("#img16-8").show();
+      $("#proj16-8Label").show();
+    },
+  function(){
+        $("#img16-8").hide();
+      $("#proj16-8Label").hide();
+  });
+    
+  $("#16-9").hover(function() {
+     $("#img16-9").show();
+      $("#proj16-9Label").show();
+    },
+  function(){
+        $("#img16-9").hide();
+      $("#proj16-9Label").hide();
+  });
+    
+  $("#16-ABC").hover(function() {
+      $("#proj16Desc, #proj16-ABCLabel").show();
+    },
+  function(){
+      $("#proj16Desc, #proj16-ABCLabel").hide();
+  });            
+    
 //PROJECT 15 IMAGES
     
   // get rid of intro text + sides, underline project title    
