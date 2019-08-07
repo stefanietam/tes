@@ -304,7 +304,7 @@ transform: translate(-50%, -50%);
 }
 
 .imgPage{
-    width: 60%;
+    width: 70%;
     padding:2.5vw;
     display: block;
     margin: 0 auto;
@@ -543,7 +543,7 @@ body, html {
 #img18-1, #img18-2, #img18-3, #img18-4{
   top: 45%;
     left: 50%;
-    width: 80%;
+    width: 68%;
   transform: translate(-50% , -50%); 
   text-indent: 0em;
   display: none;
@@ -586,9 +586,9 @@ body, html {
 
 .center{
     position:fixed;
-    font-size: 3vw;
+    font-size: 4.3vw;
     font-family: texgy;
-    line-height: 3vw;
+    line-height: 4.5vw;
     left:21.5%;
     right: 21.5%;
     vertical-align: center;
@@ -631,7 +631,7 @@ a{
 #proj1Title, #proj2Title, #proj3Title, #proj4Title, #proj5Title, #proj6Title, #proj7Title, #proj8Title, #proj9Title, #proj10Title, #proj11Title, #proj12Title, #proj13Title, #proj14Title, #proj15Title, #proj16Title, #proj17Title, #proj18Title, #middle2, #middle1 {
 width:57%;
 position: fixed;
-top: 38.5%;
+top: 37%;
 left: 50%;
 transform: translate(-50%, -50%);
 }
@@ -743,7 +743,7 @@ transform: translate(-50%, -50%);
     font-size: 2.1vw;   
 }
 }
-@media screen  and (max-width : 812px){
+@media screen  and (max-width : 767px){
 
 @font-face {
     font-family: texgy;
@@ -1051,7 +1051,7 @@ transform: translate(-50%, -50%);
 }
 
 .imgPage{
-    width: 80%;
+    width: 90%;
     padding:2.5vw;
     display: block;
     margin: 0 auto;

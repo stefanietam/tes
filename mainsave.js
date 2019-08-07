@@ -17,10 +17,7 @@ $(document).ready(function() {
     var scroll = 0;
 
 //scroll -> place most recent project on the bottom, move previous new project to top.   
-
-  if ($(window).width() > 1224) {
-     //scroll ->
-    $("#test").click(function() {
+$("#test").click(function() {
     console.log(scroll);
     if(scroll == 0){
       $("html, body").animate({ scrollLeft: $("#proj17").offset().left }, 750,);
@@ -53,9 +50,10 @@ $(document).ready(function() {
       $("html, body").animate({ scrollLeft: $("#proj18").offset().left }, 750,);
       scroll = 0;    
     }    
-    });
-     //scroll <-   
-     $("#test2").click(function() {
+    }); 
+
+//scroll <-    
+$("#test2").click(function() {
     console.log(scroll);
     if(scroll == 0){
       $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
@@ -91,185 +89,6 @@ $(document).ready(function() {
       scroll --;    
     }  
     });
-      
-  } 
-  else if($(window).width() < 1225 && $(window).width() > 767 ){
-    //scroll ->
-    $("#test").click(function() {
-    console.log(scroll);
-    if(scroll == 10){
-      $("html, body").animate({ scrollLeft: $("#proj18").offset().left }, 750,);
-      scroll = 0;    
-    } else if(scroll == 0){
-      $("html, body").animate({ scrollLeft: $("#proj17").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 1){
-      $("html, body").animate({ scrollLeft: $("#proj16").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 2){
-      $("html, body").animate({ scrollLeft: $("#proj15").offset().left }, 750,);
-      scroll ++;    
-    }  else if(scroll == 3){
-      $("html, body").animate({ scrollLeft: $("#proj14").offset().left }, 750,);
-      scroll ++;    
-    }  else if(scroll == 4){
-      $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
-      scroll ++;    
-    }   else if(scroll == 5){
-      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 6){
-      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 7){
-      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
-      scroll ++;
-        
-    } else if(scroll == 8){
-      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
-      scroll ++;
-        
-    } else if(scroll == 9){
-      $("html, body").animate({ scrollLeft: $("#proj1").offset().left }, 750,);
-      scroll ++;    
-    }    
-    }); 
-    //scroll <-    
-    $("#test2").click(function() {
-    console.log(scroll);
-    if(scroll == 0){
-      $("html, body").animate({ scrollLeft: $("#proj1").offset().left }, 750,);
-      scroll = 10;    
-    } 
-    //input new project here??
-    else if(scroll == 1){
-      $("html, body").animate({ scrollLeft: $("#proj18").offset().left }, 750,);
-      scroll --; 
-    } else if(scroll == 2){
-      $("html, body").animate({ scrollLeft: $("#proj17").offset().left }, 750,);
-      scroll --;
-    } else if(scroll == 3){
-      $("html, body").animate({ scrollLeft: $("#proj16").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 4){
-      $("html, body").animate({ scrollLeft: $("#proj15").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 5){
-      $("html, body").animate({ scrollLeft: $("#proj14").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 6){
-      $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 7){
-      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
-      scroll --;    
-    }  else if(scroll == 8){
-      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
-      scroll --;   
-    } else if(scroll == 9){
-      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 10){
-      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
-      scroll --;    
-    }  
-    });
-      
-  }
-  else if($(window).width() < 768) {
-       $("#test").click(function() {
-    console.log(scroll);
-    if(scroll == 0){
-      $("html, body").animate({ scrollLeft: $("#proj17").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 1){
-      $("html, body").animate({ scrollLeft: $("#proj16").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 2){
-      $("html, body").animate({ scrollLeft: $("#proj15").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 3){
-      $("html, body").animate({ scrollLeft: $("#proj14").offset().left }, 750,);
-      scroll ++;    
-    }  else if(scroll == 4){
-      $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
-      scroll ++;    
-    }  else if(scroll == 5){
-      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
-      scroll ++;    
-    }   else if(scroll == 6){
-      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 7){
-      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 8){
-      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 9){
-      $("html, body").animate({ scrollLeft: $("#proj1").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 10){
-      $("html, body").animate({ scrollLeft: $("#proj2").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 11){
-      $("html, body").animate({ scrollLeft: $("#proj3").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 12){
-      $("html, body").animate({ scrollLeft: $("#proj18").offset().left }, 750,);
-      scroll = 0;    
-    }     
-    });
-     //scroll <-   
-    $("#test2").click(function() {
-    console.log(scroll);
-    if(scroll == 0){
-      $("html, body").animate({ scrollLeft: $("#proj3").offset().left }, 750,);
-      scroll = 12;    
-    } 
-    //input new project here??
-    else if(scroll == 1){
-      $("html, body").animate({ scrollLeft: $("#proj18").offset().left }, 750,);
-      scroll --; 
-    } else if(scroll == 2){
-      $("html, body").animate({ scrollLeft: $("#proj17").offset().left }, 750,);
-      scroll --;
-    } else if(scroll == 3){
-      $("html, body").animate({ scrollLeft: $("#proj16").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 4){
-      $("html, body").animate({ scrollLeft: $("#proj15").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 5){
-      $("html, body").animate({ scrollLeft: $("#proj14").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 6){
-      $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 7){
-      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
-      scroll --;    
-    }  else if(scroll == 8){
-      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 9){
-      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 10){
-      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 11){
-      $("html, body").animate({ scrollLeft: $("#proj1").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 12){
-      $("html, body").animate({ scrollLeft: $("#proj2").offset().left }, 750,);
-      scroll --;    
-    }       
-    });  
-      
-  }
-    
-
 
     
 //PROJECT 18 IMAGES
