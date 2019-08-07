@@ -743,7 +743,7 @@ transform: translate(-50%, -50%);
     font-size: 2.1vw;   
 }
 }
-@media screen  and (max-width : 815px) {
+@media screen  and (max-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait){
 
 @font-face {
     font-family: texgy;
