@@ -85,6 +85,72 @@ $("#test2").click(function() {
     });
 
     
+//PROJECT 18 IMAGES
+    
+  // get rid of intro text + sides, underline project title    
+  $("#18-0, #18-1, #18-2, #18-3, #18-4, #18-ABC, #proj18").hover(function() {
+     $("#middle1, #side1, #middle2, #side2").hide();
+     $("#proj18").css("text-decoration", "underline");
+      $("#proj18Label").show();      
+    },
+  function(){
+        $("#proj18").css("text-decoration", "none");
+      $("#proj18Label").hide();
+  });
+  
+  // title hovers 
+  $("#proj18").hover(function() {
+      $("#proj18Label, #proj18Title, #proj18-0Label").show(); 
+    },
+  function(){
+      $("#proj18Label, #proj18Title, #proj18-0Label").hide();
+  });
+  
+  // numbers + abc hovers   
+  $("#18-1").hover(function() {
+     $("#img18-1").show();
+     $("#proj18-1Label").show();
+    },
+  function(){
+        $("#img18-1").hide();
+        $("#proj18-1Label").hide();
+  });
+    
+    $("#18-2").hover(function() {
+     $("#img18-2").show();
+        $("#proj18-2Label").show();
+    },
+  function(){
+        $("#img18-2").hide();
+        $("#proj18-2Label").hide();
+  });
+    
+  $("#18-3").hover(function() {
+     $("#img18-3").show();
+      $("#proj18-3Label").show();
+    },
+  function(){
+        $("#img18-3").hide();
+      $("#proj18-3Label").hide();
+  });
+
+  $("#18-4").hover(function() {
+     $("#img18-4").show();
+      $("#proj18-4Label").show();
+    },
+  function(){
+        $("#img18-4").hide();
+      $("#proj18-4Label").hide();
+  });
+    
+  $("#18-ABC").hover(function() {
+      $("#proj18Desc, #proj18-ABCLabel").show();
+    },
+  function(){
+      $("#proj18Desc, #proj18-ABCLabel").hide();
+  });       
+    
+    
  //PROJECT 17 IMAGES
     
   // get rid of intro text + sides, underline project title    
