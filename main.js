@@ -13,263 +13,272 @@ $(document).ready(function() {
   });
 
 //SCROLL
-    
+    var screenWidth = $(window).width();
+    console.log(screenWidth);
     var scroll = 0;
-
-//scroll -> place most recent project on the bottom, move previous new project to top.   
-
-  if ($(window).width() > 1224) {
-     //scroll ->
-    $("#test").click(function() {
-    console.log(scroll);
-    if(scroll == 0){
-      $("html, body").animate({ scrollLeft: $("#proj17").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 1){
-      $("html, body").animate({ scrollLeft: $("#proj16").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 2){
-      $("html, body").animate({ scrollLeft: $("#proj15").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 3){
-      $("html, body").animate({ scrollLeft: $("#proj14").offset().left }, 750,);
-      scroll ++;    
-    }  else if(scroll == 4){
-      $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
-      scroll ++;    
-    }  else if(scroll == 5){
-      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
-      scroll ++;    
-    }   else if(scroll == 6){
-      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 7){
-      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 8){
-      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 9){
-      $("html, body").animate({ scrollLeft: $("#proj18").offset().left }, 750,);
-      scroll = 0;    
-    }    
-    });
-     //scroll <-   
-     $("#test2").click(function() {
-    console.log(scroll);
-    if(scroll == 0){
-      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
-      scroll = 9;    
-    } 
-    //input new project here??
-    else if(scroll == 1){
-      $("html, body").animate({ scrollLeft: $("#proj18").offset().left }, 750,);
-      scroll --; 
-    } else if(scroll == 2){
-      $("html, body").animate({ scrollLeft: $("#proj17").offset().left }, 750,);
-      scroll --;
-    } else if(scroll == 3){
-      $("html, body").animate({ scrollLeft: $("#proj16").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 4){
-      $("html, body").animate({ scrollLeft: $("#proj15").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 5){
-      $("html, body").animate({ scrollLeft: $("#proj14").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 6){
-      $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 7){
-      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
-      scroll --;    
-    }  else if(scroll == 8){
-      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 9){
-      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
-      scroll --;    
-    }  
-    });
-      
-  } 
-  else if($(window).width() < 1225 && $(window).width() > 767 ){
-    //scroll ->
-    $("#test").click(function() {
-    console.log(scroll);
-    if(scroll == 10){
-      $("html, body").animate({ scrollLeft: $("#proj18").offset().left }, 750,);
-      scroll = 0;    
-    } else if(scroll == 0){
-      $("html, body").animate({ scrollLeft: $("#proj17").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 1){
-      $("html, body").animate({ scrollLeft: $("#proj16").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 2){
-      $("html, body").animate({ scrollLeft: $("#proj15").offset().left }, 750,);
-      scroll ++;    
-    }  else if(scroll == 3){
-      $("html, body").animate({ scrollLeft: $("#proj14").offset().left }, 750,);
-      scroll ++;    
-    }  else if(scroll == 4){
-      $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
-      scroll ++;    
-    }   else if(scroll == 5){
-      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 6){
-      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 7){
-      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
-      scroll ++;
-        
-    } else if(scroll == 8){
-      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
-      scroll ++;
-        
-    } else if(scroll == 9){
-      $("html, body").animate({ scrollLeft: $("#proj1").offset().left }, 750,);
-      scroll ++;    
-    }    
+    
+    $(window).resize(function() {
+        screenWidth = $(window).width();
     }); 
-    //scroll <-    
-    $("#test2").click(function() {
-    console.log(scroll);
-    if(scroll == 0){
-      $("html, body").animate({ scrollLeft: $("#proj1").offset().left }, 750,);
-      scroll = 10;    
-    } 
-    //input new project here??
-    else if(scroll == 1){
+     //scroll ->
+    $("#test").click(function() { 
+    if(scroll == 0 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj17").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 1 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj16").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 2 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj15").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 3 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj14").offset().left }, 750,);
+      scroll ++;    
+    }  else if(scroll == 4 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
+      scroll ++;    
+    }  else if(scroll == 5 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
+      scroll ++;    
+    }   else if(scroll == 6 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 7 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 8 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 9 && screenWidth > 1224){
       $("html, body").animate({ scrollLeft: $("#proj18").offset().left }, 750,);
-      scroll --; 
-    } else if(scroll == 2){
-      $("html, body").animate({ scrollLeft: $("#proj17").offset().left }, 750,);
-      scroll --;
-    } else if(scroll == 3){
-      $("html, body").animate({ scrollLeft: $("#proj16").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 4){
-      $("html, body").animate({ scrollLeft: $("#proj15").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 5){
-      $("html, body").animate({ scrollLeft: $("#proj14").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 6){
-      $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 7){
-      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
-      scroll --;    
-    }  else if(scroll == 8){
-      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
-      scroll --;   
-    } else if(scroll == 9){
-      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
-      scroll --;    
-    } else if(scroll == 10){
-      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
-      scroll --;    
-    }  
-    });
-      
-  }
-  else if($(window).width() < 768) {
-       $("#test").click(function() {
-    console.log(scroll);
-    if(scroll == 0){
+      scroll = 0;    
+    } else if(scroll == 10 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj18").offset().left }, 750,);
+      scroll = 0;    
+    } else if(scroll == 11 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj18").offset().left }, 750,);
+      scroll = 0;    
+    } else if(scroll == 12 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj18").offset().left }, 750,);
+      scroll = 0;    
+    } 
+        
+      else if(scroll == 0 && screenWidth < 1225 && screenWidth > 767){
       $("html, body").animate({ scrollLeft: $("#proj17").offset().left }, 750,);
       scroll ++;    
-    } else if(scroll == 1){
+    } else if(scroll == 1 && screenWidth < 1225 && screenWidth > 767){
       $("html, body").animate({ scrollLeft: $("#proj16").offset().left }, 750,);
       scroll ++;    
-    } else if(scroll == 2){
+    } else if(scroll == 2 && screenWidth < 1225 && screenWidth > 767){
       $("html, body").animate({ scrollLeft: $("#proj15").offset().left }, 750,);
       scroll ++;    
-    } else if(scroll == 3){
+    }  else if(scroll == 3 && screenWidth < 1225 && screenWidth > 767){
       $("html, body").animate({ scrollLeft: $("#proj14").offset().left }, 750,);
       scroll ++;    
-    }  else if(scroll == 4){
+    }  else if(scroll == 4 && screenWidth < 1225 && screenWidth > 767){
       $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
       scroll ++;    
-    }  else if(scroll == 5){
+    }   else if(scroll == 5 && screenWidth < 1225 && screenWidth > 767){
       $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
       scroll ++;    
-    }   else if(scroll == 6){
+    } else if(scroll == 6 && screenWidth < 1225 && screenWidth > 767){
       $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
       scroll ++;    
-    } else if(scroll == 7){
+    } else if(scroll == 7 && screenWidth < 1225 && screenWidth > 767){
       $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 8){
+      scroll ++;        
+    } else if(scroll == 8 && screenWidth < 1225 && screenWidth > 767){
       $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
-      scroll ++;    
-    } else if(scroll == 9){
+      scroll ++;        
+    } else if(scroll == 9 && screenWidth < 1225 && screenWidth > 767){
       $("html, body").animate({ scrollLeft: $("#proj1").offset().left }, 750,);
       scroll ++;    
-    } else if(scroll == 10){
+    } else if(scroll == 10 && screenWidth < 1225 && screenWidth > 767){
+      $("html, body").animate({ scrollLeft: $("#proj18").offset().left }, 750,);
+      scroll = 0;    
+    } else if(scroll == 11 && screenWidth < 1225 && screenWidth > 767){
+      $("html, body").animate({ scrollLeft: $("#proj18").offset().left }, 750,);
+      scroll = 0;    
+    } else if(scroll == 12 && screenWidth < 1225 && screenWidth > 767){
+      $("html, body").animate({ scrollLeft: $("#proj18").offset().left }, 750,);
+      scroll = 0;    
+    }
+        
+      else if(scroll == 0 && screenWidth < 768){
+      $("html, body").animate({ scrollLeft: $("#proj17").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 1 && screenWidth < 768){
+      $("html, body").animate({ scrollLeft: $("#proj16").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 2 && screenWidth < 768){
+      $("html, body").animate({ scrollLeft: $("#proj15").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 3 && screenWidth < 768){
+      $("html, body").animate({ scrollLeft: $("#proj14").offset().left }, 750,);
+      scroll ++;    
+    }  else if(scroll == 4 && screenWidth < 768){
+      $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
+      scroll ++;    
+    }  else if(scroll == 5 && screenWidth < 768){
+      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
+      scroll ++;    
+    }   else if(scroll == 6 && screenWidth < 768){
+      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 7 && screenWidth < 768){
+      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 8 && screenWidth < 768){
+      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 9 && screenWidth < 768){
+      $("html, body").animate({ scrollLeft: $("#proj1").offset().left }, 750,);
+      scroll ++;    
+    } else if(scroll == 10 && screenWidth < 768){
       $("html, body").animate({ scrollLeft: $("#proj2").offset().left }, 750,);
       scroll ++;    
-    } else if(scroll == 11){
+    } else if(scroll == 11 && screenWidth < 768){
       $("html, body").animate({ scrollLeft: $("#proj3").offset().left }, 750,);
       scroll ++;    
-    } else if(scroll == 12){
+    } else if(scroll == 12 && screenWidth < 768){
       $("html, body").animate({ scrollLeft: $("#proj18").offset().left }, 750,);
       scroll = 0;    
-    }     
-    });
-     //scroll <-   
-    $("#test2").click(function() {
+    } 
     console.log(scroll);
-    if(scroll == 0){
+    });
+    
+     //scroll <-   
+    $("#test2").click(function() {    
+    if(scroll == 0 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
+      scroll = 9;    
+    } else if(scroll == 1 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj18").offset().left }, 750,);
+      scroll --; 
+    } else if(scroll == 2 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj17").offset().left }, 750,);
+      scroll --;
+    } else if(scroll == 3 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj16").offset().left }, 750,);
+      scroll --;    
+    } else if(scroll == 4 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj15").offset().left }, 750,);
+      scroll --;    
+    } else if(scroll == 5 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj14").offset().left }, 750,);
+      scroll --;    
+    } else if(scroll == 6 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
+      scroll --;    
+    } else if(scroll == 7 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
+      scroll --;    
+    }  else if(scroll == 8 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
+      scroll --;    
+    } else if(scroll == 9 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
+      scroll --;    
+    } else if(scroll == 10 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
+      scroll = scroll - 2;    
+    } else if(scroll ==11 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
+      scroll = scroll - 3;    
+    } else if(scroll == 12 && screenWidth > 1224){
+      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
+      scroll = scroll -4;    
+    } 
+        
+      else if(scroll == 0 && screenWidth < 1225 && screenWidth > 767){
+      $("html, body").animate({ scrollLeft: $("#proj1").offset().left }, 750,);
+      scroll = 10;    
+    } else if(scroll == 1 && screenWidth < 1225 && screenWidth > 767){
+      $("html, body").animate({ scrollLeft: $("#proj18").offset().left }, 750,);
+      scroll --; 
+    } else if(scroll == 2 && screenWidth < 1225 && screenWidth > 767){
+      $("html, body").animate({ scrollLeft: $("#proj17").offset().left }, 750,);
+      scroll --;
+    } else if(scroll == 3 && screenWidth < 1225 && screenWidth > 767){
+      $("html, body").animate({ scrollLeft: $("#proj16").offset().left }, 750,);
+      scroll --;    
+    } else if(scroll == 4 && screenWidth < 1225 && screenWidth > 767){
+      $("html, body").animate({ scrollLeft: $("#proj15").offset().left }, 750,);
+      scroll --;    
+    } else if(scroll == 5 && screenWidth < 1225 && screenWidth > 767){
+      $("html, body").animate({ scrollLeft: $("#proj14").offset().left }, 750,);
+      scroll --;    
+    } else if(scroll == 6 && screenWidth < 1225 && screenWidth > 767){
+      $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
+      scroll --;    
+    } else if(scroll == 7 && screenWidth < 1225 && screenWidth > 767){
+      $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
+      scroll --;    
+    }  else if(scroll == 8 && screenWidth < 1225 && screenWidth > 767){
+      $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
+      scroll --;   
+    } else if(scroll == 9 && screenWidth < 1225 && screenWidth > 767){
+      $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
+      scroll --;    
+    } else if(scroll == 10 && screenWidth < 1225 && screenWidth > 767){
+      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
+      scroll --;    
+    } else if(scroll == 11 && screenWidth < 1225 && screenWidth > 767){
+      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
+      scroll = scroll - 2;    
+    } else if(scroll == 12 && screenWidth < 1225 && screenWidth > 767){
+      $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
+      scroll = scroll - 3;    
+    } 
+        
+      else if(scroll == 0 && screenWidth < 768){
       $("html, body").animate({ scrollLeft: $("#proj3").offset().left }, 750,);
       scroll = 12;    
     } 
     //input new project here??
-    else if(scroll == 1){
+      else if(scroll == 1 && screenWidth < 768){
       $("html, body").animate({ scrollLeft: $("#proj18").offset().left }, 750,);
       scroll --; 
-    } else if(scroll == 2){
+    } else if(scroll == 2 && screenWidth < 768){
       $("html, body").animate({ scrollLeft: $("#proj17").offset().left }, 750,);
       scroll --;
-    } else if(scroll == 3){
+    } else if(scroll == 3 && screenWidth < 768){
       $("html, body").animate({ scrollLeft: $("#proj16").offset().left }, 750,);
       scroll --;    
-    } else if(scroll == 4){
+    } else if(scroll == 4 && screenWidth < 768){
       $("html, body").animate({ scrollLeft: $("#proj15").offset().left }, 750,);
       scroll --;    
-    } else if(scroll == 5){
+    } else if(scroll == 5 && screenWidth < 768){
       $("html, body").animate({ scrollLeft: $("#proj14").offset().left }, 750,);
       scroll --;    
-    } else if(scroll == 6){
+    } else if(scroll == 6 && screenWidth < 768){
       $("html, body").animate({ scrollLeft: $("#proj13").offset().left }, 750,);
       scroll --;    
-    } else if(scroll == 7){
+    } else if(scroll == 7 && screenWidth < 768){
       $("html, body").animate({ scrollLeft: $("#proj11").offset().left }, 750,);
       scroll --;    
-    }  else if(scroll == 8){
+    }  else if(scroll == 8 && screenWidth < 768){
       $("html, body").animate({ scrollLeft: $("#proj7").offset().left }, 750,);
       scroll --;    
-    } else if(scroll == 9){
+    } else if(scroll == 9 && screenWidth < 768){
       $("html, body").animate({ scrollLeft: $("#proj12").offset().left }, 750,);
       scroll --;    
-    } else if(scroll == 10){
+    } else if(scroll == 10 && screenWidth < 768){
       $("html, body").animate({ scrollLeft: $("#proj9").offset().left }, 750,);
       scroll --;    
-    } else if(scroll == 11){
+    } else if(scroll == 11 && screenWidth < 768){
       $("html, body").animate({ scrollLeft: $("#proj1").offset().left }, 750,);
       scroll --;    
-    } else if(scroll == 12){
+    } else if(scroll == 12 && screenWidth < 768){
       $("html, body").animate({ scrollLeft: $("#proj2").offset().left }, 750,);
       scroll --;    
-    }       
-    });  
-      
-  }
-    
+    }   
+        
+          console.log(scroll);       
+    });
 
+  
+    
 
     
 //PROJECT 18 IMAGES
